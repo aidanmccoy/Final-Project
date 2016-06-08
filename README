@@ -1,0 +1,36 @@
+README
+
+NAME
+	MLook (stands for McCoy's look)
+
+AUTHOR
+	Aidan McCoy
+
+DESCRIPTION
+	A lite version of the look command with limited flags but similar use. 
+
+INPUTS
+	argv[1] Target - a *char that is the string that you are searching for
+	argv[2] File - a *char that is a file name you wish to search. If none 
+				   is given /usr/share/dict/words with flags -d -f is used
+   	argv[3-5] Flags - The following flags can be used 
+   				-d this flag only compares alpha numeric characters
+   				-f this flag ignores the case value when comparing
+   				-t [char] this flag allows you to input a char to only 
+   						compare characters up to the first occurance of that
+   						char
+
+OUTPUTS
+	Exits 0 on success, Exits 1 on failure
+
+BUILDING
+	To build, simply run the provided Makefile in the same directory as the 
+	MLook.c file. This will create a MLook executable that can be run with 
+	the ./MLook [target] [file] [flags] command
+
+HISTORY
+	Well... you're looking at it
+
+AVAILABILTY
+	Only the best of the best have access to this code so feel blessed
+	Also available on github @ 
